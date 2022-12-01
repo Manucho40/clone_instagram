@@ -1,0 +1,104 @@
+.home{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.img1{
+  width: 450px;
+}
+.img2{
+  position: relative;
+  width: 240px;
+  bottom: 589px;
+  left: 153px;
+  margin-bottom: -589px;
+  transition: opacity 1.5s ease-in-out !important;
+}
+
+.coWithMail{
+  width: 340px;
+  
+}
+
+.vide{
+  width: 100px;
+  height: 2px;
+  border: 1px solid rgb(82, 82, 82);
+}
+
+footer a{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin: 10px;
+
+}
+
+footer select{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin: 10px;
+}
+
+.profil{
+      border-radius: 100px;
+      display: block;
+      height: 100px;
+      margin: 10px auto 10px;
+      width: 100px;
+}
+.profilUser{
+      border-radius: 100px;
+      display: block;
+      height: 28px;
+      width: 28px;
+}
+
+.imgStatus{
+  border-radius: 100px;
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+.suggImg{
+  border-radius: 100px;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.nameStatus{
+  letter-spacing: .01em;
+  max-width: 74px;
+  padding-left: 2px;
+  padding-right: 2px;
+  box-sizing: border-box;
+  font-size: 12px;
+  display: block;
+  max-width: 64px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: lowercase;
+  border-color:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.actuallityImg{
+  border-radius: 100px;
+  display: block;
+  height: 30px;
+  width: 30px;
+
+}
+
+.imgActu{
+  width: 100%;
+  height: auto;
+}
+

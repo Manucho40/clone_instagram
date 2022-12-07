@@ -8,7 +8,6 @@ import ThemeContext from "../../../../context/ThemeContext";
 const FormBox = () => {
     const contextValue = useContext(ThemeContext);
     const handleContext = () => {
-        console.log("hell")
         contextValue?.updateSwitchConnexionMode(!contextValue.switchConnexionMode)
     }
     

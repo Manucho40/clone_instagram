@@ -20,6 +20,7 @@ const StatusModal = () => {
                         <img className="h- w-full" src={statusImg} alt="" />
                     </div>
                 </section>
+
             </div>
         </>
      );

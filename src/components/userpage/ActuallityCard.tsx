@@ -1,14 +1,19 @@
-import React, { FC } from "react"
-import actuallityImg from "../../assets/img/profil.jpg"
-import { FaRegBookmark, FaRegComment, FaRegGrinAlt, FaRegHeart, FaRegPaperPlane, FaTelegramPlane } from "react-icons/fa"
+import React, { FC, useState } from "react"
+import { FaRegBookmark, FaRegComment, FaRegGrinAlt, FaRegHeart, FaRegPaperPlane} from "react-icons/fa"
 import { statusFriend } from "../../helpers/types"
-
-
+import EmojiPicker from 'emoji-picker-react';
+import { EmojiStyle } from 'emoji-picker-react';
 type Props = {
     statusData: statusFriend
 }
 
 const ActuallityCard: FC<Props> = ({statusData}) => {
+    const [valueComment, setValueComent] = useState<string>("");
+    const [viewEmoji, setViewEmoji] = useState<boolean>(false);
+    const handleComment = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const name = event.target.value;
+        setValueComent(name)
+    }
     const formatDate= (date: Date) =>{
         return `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
     }
@@ -59,17 +64,32 @@ const ActuallityCard: FC<Props> = ({statusData}) => {
                 </div>
                 <div className="flex items-center mx-3 my-2 justify-between">
                     <div>
-                        <button className="mr-2 mt-1">
-                            <FaRegGrinAlt size={34} />
+                        <button className="mr-2 mt-2" onClick={() => setViewEmoji(!viewEmoji)}>
+                            <FaRegGrinAlt size={24} />
                         </button>
                     </div>
                     <div className="w-full">
-                       <input placeholder="Add a comment..." className="w-full h-8 bg-[#fafafa] focus:outline-none" type="text" />
+                       <input name="valueComment" value={valueComment} onChange={handleComment} placeholder="Add a comment..." className="w-full h-8 bg-[#fafafa] focus:outline-none" type="text" />
                     </div>
                     <div>
-                        <a className="text-sm font-semibold text-blue-500" href="">Post</a>
+                        {
+                            valueComment ? (
+                                <button className={`text-sm font-semibold text-blue-500`} >Post</button>
+                            ):(
+                                <button className={`text-sm font-semibold text-blue-500 disabled:opacity-50`} disabled>Post</button>
+                            )
+                        }
                     </div>
                 </div>
+                {
+                    viewEmoji ? (
+                    <div className="absolute">
+                        <EmojiPicker searchDisabled={true}/>
+                    </div>       
+                    ) : (
+                        <div></div>
+                    )
+                }
             </div>
         </>
      );

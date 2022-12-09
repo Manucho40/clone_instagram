@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 const HeaderH = () => {
     return ( 
         <>
-            <header className="border-b p-4  z-10 h-full w-2/12  fixed bg-[#fff] border-l-2
-             border-sky-500">
+            <header className="border-b p-4  z-10 h-full w-2/12  fixed bg-[#fff] border-l-2">
                 <div className="max-w-4xl flex flex-col justify-between">
                     <div className="m-4">
                         <Link to="/">

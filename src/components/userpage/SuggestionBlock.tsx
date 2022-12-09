@@ -22,6 +22,14 @@ const SuggestionBlock = () => {
                <a href="">Switch</a>
            </div>
         </div>
+        <div className="flex justify-between p-5">
+           <div className="flex w-full">
+               <p>Suggestions For You</p>
+           </div>
+           <div className="text-sm text-sky-500">
+               <button className="">See All</button>
+           </div>
+        </div>
         </>
      );
 }

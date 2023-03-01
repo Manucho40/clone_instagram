@@ -65,6 +65,12 @@ footer select{
   height: 60px;
   width: 60px;
 }
+.imgSuggest{
+  border-radius: 100px;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
 .suggImg{
   border-radius: 100px;
   display: block;

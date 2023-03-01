@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useContext, useState } from "react"
 import { FaAngleLeft, FaAngleRight, } from "react-icons/fa";
 import Slider from "react-slick";
-import imgStatus from "../../assets/img/profil.jpg"
 import StatusViewContext from "../../context/StatusViewContext";
 import { USER } from "../../data/UsersData";
 import { user } from "../../helpers/types";

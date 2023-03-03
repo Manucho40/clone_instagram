@@ -3,7 +3,7 @@ import SuggestionBlock from "./SuggestionBlock";
 const Left = () => {
     return ( 
         <>
-            <div className="w-5/12">
+            <div className="suggestion w-5/12">
                 <SuggestionBlock />
             </div>
         </>

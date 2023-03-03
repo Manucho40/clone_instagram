@@ -9,7 +9,7 @@ const Home= () => {
         <>
             <div className="home">
                 <div className="flex flex-col">
-                    <div className="flex mt-6">
+                    <div className="flex justify-center mt-6">
                         <LeftSide />
                         <RightSide />
                     </div>

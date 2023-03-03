@@ -12,7 +12,7 @@ const FormBox = () => {
     }
     
     return ( 
-        <div className="border-solid border-2 p-12 flex flex-col items-center" >
+        <div className="formBox border-solid border-2 p-12 flex flex-col items-center" >
             <div className="mb-4">
                 <img className="w-40" src={require("../../../../assets/img/instagram.png")} alt="" />
             </div>

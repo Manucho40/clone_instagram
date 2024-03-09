@@ -24,7 +24,7 @@ const FormBox = () => {
                     <input type="password" name="Password" id="Password" placeholder="Password" autoComplete="given-name" className="mt-1 p-2 block focus:outline-none w-64 border h-8 shadow-sm  sm:text-sm" />
                 </div>
                 <div className="col-span-8 rounded  sm:col-span-3 bg-[#0095f6]">  
-                    <Link to="/user" className="mt-1 text-center p-2 block w-64 h-8 border-gray-300 font-bold text-[#fff] shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">Log In</Link>
+                    <Link to="/user" className="mt-1 text-center p-2 block w-64 h-8 border-gray-300 font-bold text-[#fff] shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">Log In (cliquez ici)</Link>
                 </div>
                 <div className="col-span-8 mt-4 flex justify-between sm:col-span-3 text-[#fff]"> 
                     <div className="vide"></div>
